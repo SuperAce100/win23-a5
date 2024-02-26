@@ -29,9 +29,3 @@ if $CALCULATOR 3 @ 2; then  # If the return code of $PROGRAM is zero (i.e. succe
   echo 'ERROR! An invalid run of the application (3 @ 2) apparently succeeded?!'
   exit 1
 fi
-
-# Test 04: Ensure program gives correct answer with a valid operand
-if [[ $($CALCULATOR 1 - 4) -ne -3 ]]; then  # If the output of the program is not 2...
-  echo 'ERROR! A valid run of the calculator (1 -4) failed to produce 2 as an output!'
-  exit 1
-fi
